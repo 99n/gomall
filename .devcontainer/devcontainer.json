@@ -1,0 +1,14 @@
+{
+  "name": "Go 1.21.7 Development",
+  "image": "go-1.21.7-local",  // 使用你自定义的镜像
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "settings": {
+    "go.gopath": "/go",
+    "go.goroot": "/usr/local/go"
+  },
+  "extensions": ["golang.Go"],
+  "remoteUser": "root"  // 可选：如果需 root 权限安装依赖
+}
